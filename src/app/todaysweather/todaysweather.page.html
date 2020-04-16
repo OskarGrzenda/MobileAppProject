@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-back-button slot="start" icon="home"></ion-back-button>
+    <ion-title>Todays Weather Galway</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-toolbar color="primary">
+    <ion-title>GALWAY</ion-title>
+  </ion-toolbar>
+
+  <!--This is the API for the weather in Galway-->
+  <ul>
+    <li *ngFor="let weather of weatherData">  
+      {{weather.id}}
+      {{weather.main}} 
+      {{weather.description}}
+      {{weather.icon}} 
+    </li>
+  </ul>
+
+  <img src="https://cw-gbl-gws-prod.azureedge.net/-/media/cw/emea/ireland/offices/card-image-emea-offices-galway-750x456.jpeg?rev=db1b54423aa04251bb08089eeeadb242">
+
+   
+
+</ion-content>
+
